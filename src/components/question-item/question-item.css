@@ -1,0 +1,16 @@
+.Question-item {
+  color: #FFFFFF;
+}
+
+.Question-item p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.Question-item input {
+  width: 96%;
+  border: 1px solid #FFFFFF;
+  background-color: inherit;
+  padding: 8px 0 8px 11px;
+}

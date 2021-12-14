@@ -1,21 +1,18 @@
+import QuestionItem from '../question-item';
+import SendButton from '../send-button';
 import './app.css';
+import data from '../../db.json';
 
-function App() {
+const App = () => {
+
+  fetch(data)
+  .then(data => data.json())
+  .then(res => console.log(res));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QuestionItem />
+      <SendButton />
     </div>
   );
 }
