@@ -1,9 +1,9 @@
 import './question-item.css';
 
-const QuestionItem = () => {
+const QuestionItem = ({ question }) => {
 	return (
 		<div className='Question-item'>
-			<p>Что такое делегирование событий?</p>
+			<p>{question}</p>
 			<input type="text" placeholder='*Введите текст' />
 		</div>
 	);

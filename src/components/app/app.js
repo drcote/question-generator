@@ -1,18 +1,12 @@
-import QuestionItem from '../question-item';
-import SendButton from '../send-button';
 import './app.css';
 import data from '../../db.json';
+import Question from '../question/question';
 
 const App = () => {
 
-  fetch(data)
-  .then(data => data.json())
-  .then(res => console.log(res));
-
   return (
     <div className="App">
-      <QuestionItem />
-      <SendButton />
+      <Question data={data.data} />
     </div>
   );
 }
