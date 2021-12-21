@@ -1,6 +1,6 @@
 import './app.css';
 import data from '../../db.json';
-import Question from '../question/question';
+import Question from '../question';
 
 const App = () => {
 
